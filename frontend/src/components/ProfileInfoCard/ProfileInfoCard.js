@@ -92,6 +92,7 @@ export default class ProfileInfoCard extends React.Component {
         })
     }
 
+
     componentDidUpdate(prevProps, prevState) {
         if(prevState.formData !== this.state.formData) {
             axios.get(`${API_BASE_URL}users/${this.userService.getUserIdFromStorage()}`)
@@ -100,6 +101,7 @@ export default class ProfileInfoCard extends React.Component {
                 this.setState({loggedUser: res.data});
             })
         }
+    }
     }
 
     render() {

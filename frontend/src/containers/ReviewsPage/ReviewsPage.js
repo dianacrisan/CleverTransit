@@ -139,7 +139,8 @@ export default class ReviewsPage extends React.Component {
                                 for(let i = 0; i <review.satisfaction_level; i++) {
                                 smileyFaces.push(<i className="faces fas fa-smile"></i>);
                                 }
-                                 return (  
+                                 return (
+                                     <div className="container-review">
                                 <ReviewInfo 
                                 reviewId={review.id} 
                                 reviewTitle={review.review_title}
@@ -153,6 +154,7 @@ export default class ReviewsPage extends React.Component {
                                 reviewLikes={review.review_noLikes}
                                 reviewUserId={review.userId}
                                 ></ReviewInfo>
+                                </div>
                                 )
                             } 
                             )}
@@ -167,7 +169,10 @@ export default class ReviewsPage extends React.Component {
                                 for(let i = 0; i <review.satisfaction_level; i++) {
                                 smileyFaces.push(<i className="faces fas fa-smile"></i>);
                                 }
-                                 return ( 
+
+                                 return (  
+                                <div className="container-review">
+
                                 <ReviewInfo 
                                 reviewId={review.id} 
                                 reviewTitle={review.review_title}
@@ -181,6 +186,7 @@ export default class ReviewsPage extends React.Component {
                                 reviewLikes={review.review_noLikes}
                                 reviewUserId={review.userId}
                                 ></ReviewInfo>
+                                </div>
                                 )
                             } 
                             )}
@@ -196,6 +202,8 @@ export default class ReviewsPage extends React.Component {
                                 smileyFaces.push(<i className="faces fas fa-smile"></i>);
                                 }
                                  return (  
+                                     <div className="container-review">
+
                                 <ReviewInfo 
                                 reviewId={review.id} 
                                 reviewTitle={review.review_title}
@@ -209,6 +217,8 @@ export default class ReviewsPage extends React.Component {
                                 reviewLikes={review.review_noLikes}
                                 reviewUserId={review.userId}
                                 ></ReviewInfo>
+                                     </div>
+
                                 )
                             } 
                             )} 

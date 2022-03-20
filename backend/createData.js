@@ -165,6 +165,7 @@ const reviewMock = [
 //     await model.User.bulkCreate(users);
 // })();
 
+
 // (async () => {
 //     await model.MethodOfTransport.bulkCreate(data);
 // })();
